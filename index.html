@@ -5,54 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Euro Cargo Hub - ECH</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    html {
+      scroll-behavior: smooth;
+    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
     header, footer { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-    nav { background: #34495e; padding: 10px; text-align: center; }
+    nav { background: #34495e; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 100; }
     nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1602016753515-7f87f6f5439a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      color: white; padding: 120px 20px; text-align: center;
-    }
-    .hero h1 { font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-    .btn {
-      background-color: #f39c12; color: white; padding: 10px 20px;
-      text-decoration: none; border-radius: 5px;
-    }
-    .logo {
-      display: flex; align-items: center; justify-content: center;
-      gap: 10px; margin-bottom: 10px;
-    }
-    .logo img {
-      height: 50px;
-    }
-    .logo-text {
-      font-size: 1.8em;
-      font-weight: bold;
-      color: #f1c40f;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #2c3e50; border-bottom: 2px solid #ccc; padding-bottom: 10px; }
+    .contact-info { background: #f8f9f9; padding: 20px; border: 1px solid #ccc; margin-top: 20px; }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Font_Awesome_5_solid_box-open.svg/64px-Font_Awesome_5_solid_box-open.svg.png" alt="ECH Logo">
-      <span class="logo-text">ECH | Euro Cargo Hub</span>
-    </div>
-    <p>Your Gateway to Europe</p>
+    <h1>Your Gateway to Europe – Euro Cargo Hub</h1>
+    <p>유럽 수출을 위한 최적의 물류 파트너</p>
   </header>
 
   <nav>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <section class="hero">
-    <h1>Reliable Logistics. European Reach.</h1>
-    <p>유럽 수출을 위한 최적의 물류 파트너</p>
-    <a href="services.html" class="btn">Explore Our Services</a>
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>ECH는 고객의 제품을 유럽 현지에서 안전하게 관리하고 유통할 수 있도록 다음과 같은 서비스를 제공합니다:</p>
+    <ul>
+      <li><strong>보관 서비스 (Storage):</strong> 네덜란드 창고에서 단기 및 장기 보관 옵션 제공</li>
+      <li><strong>재포장 서비스 (Repackaging):</strong> 제품 리패키징, 라벨 부착, 맞춤 포장</li>
+      <li><strong>출고 대행 (Fulfillment):</strong> 주문 수집, 피킹 및 유럽 전역 출고 서비스, 통관 서류 처리 포함</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About ECH</h2>
+    <p>Euro Cargo Hub(ECH)는 한국 기업들의 유럽 진출을 돕기 위해 설립된 물류 전문 기업입니다. 로테르담과 가까운 네덜란드 창고를 기반으로 하여 유럽 내 빠른 배송과 안정적인 물류 서비스를 제공합니다. 한국어 상담 가능하며, 현지 대응 역량을 갖춘 것이 우리의 강점입니다.</p>
+    <p>보관, 재포장, 출고 대행은 물론, 향후 반품 관리와 품질 검사 서비스까지도 확장해 나갈 계획입니다.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>문의사항이 있으시면 언제든지 연락주세요. 빠르고 정확하게 도와드리겠습니다.</p>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:yyb@ech.kr">yyb@ech.kr</a></p>
+      <p><strong>운영시간:</strong> 월~금, 09:00~18:00 (CET 기준)</p>
+    </div>
   </section>
 
   <footer>
